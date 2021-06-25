@@ -1,0 +1,623 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: fuente8Bit;
+    src: url(fuente/8-BIT\ WONDER.TTF);
+}
+
+
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: #F2F2F2;
+    display: flex;
+    overflow: hidden;
+}
+
+.title{
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    z-index: 6;
+    }.title h1{
+        margin: auto;
+        color: #0f0f0f;
+        font-size: 60px;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+    }
+
+.poweredBy{
+    position: absolute;
+    top: 94%;
+    right: 2%;
+    width: 200px;
+    height: 30px;
+    display: flex;
+    z-index: 6;
+    }.poweredBy p{
+        margin: auto;
+        color: #F2F2F2;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+        }.poweredBy p span{
+            color: #0f0f0f;
+            }
+
+.fondo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    }.fondo img{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+    }
+
+
+.components{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+
+
+/* ------------------------------------------------------- */
+.one-card{
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: -10px 10px 15px 0px #00000021;
+    background-color: #F2F2F2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 25% 40% 20%;
+    }.one-card .plan{
+        width: 100%;
+        display: flex;
+        }.one-card .plan p{
+            margin: auto;
+            color: #0f0f0f;
+            font-size: 25px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-family: 'Poppins', sans-serif;
+        }
+
+    .one-card .price{
+        width: 100%;
+        display: flex;
+        }.one-card .price p{
+            margin: auto;
+            color: #0f0f0f;
+            font-size: 80px;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+        }
+
+    .one-card .description{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        }.one-card .description div{
+            margin: auto;
+            width: 70%;
+            height: 1px;
+            background-color: #00000036;
+        }.one-card .description p{
+            margin: auto;
+            color: #0f0f0f;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: 'Poppins', sans-serif;
+        }
+
+    .one-card .button{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        }.one-card .button .paypal{
+            width: 120px;
+            height: 45px;
+            margin: auto;
+            border: 2px solid #038C7F;
+            border-radius: 10px;
+            }.one-card .button .paypal form{
+                margin: auto;
+                width: 100%;
+                display: flex;
+            }.one-card .button .paypal form input{
+                width: 120px;
+                height: 45px;
+                margin: auto;
+                background-color: transparent;
+                color: #038C7F;
+                font-size: 20px;
+                text-transform: uppercase;
+                font-family: 'Poppins', sans-serif;
+                border: none;
+                cursor: pointer;
+                }
+
+        .one-card .button .nequi{
+            margin: auto;
+            width: 100%;
+            display: flex;
+            }.one-card .button .nequi a{
+                margin: auto;
+                width: 120px;
+                height: 45px;
+                background-color: #038C7F;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                display: flex;
+                }.one-card .button .nequi a p{
+                    margin: auto;
+                    color: #ffffff;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    font-family: 'Poppins', sans-serif;
+                    }
+
+
+
+/* ------------------------------------------------------- */
+.principal-card{
+    width: 400px;
+    height: 550px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 5px #00000021;
+    background-color: #038C7F;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 25% 40% 20%;
+    }.principal-card .plan{
+        width: 100%;
+        display: flex;
+        }.principal-card .plan p{
+            margin: auto;
+            color: #F2F2F2;
+            font-size: 25px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-family: 'Poppins', sans-serif;
+        }
+
+    .principal-card .price{
+        width: 100%;
+        display: flex;
+        }.principal-card .price p{
+            margin: auto;
+            color: #F2F2F2;
+            font-size: 80px;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+        }
+
+    .principal-card .description{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        }.principal-card .description div{
+            margin: auto;
+            width: 70%;
+            height: 1px;
+            background-color: #ffffff36;
+        }.principal-card .description p{
+            margin: auto;
+            color: #F2F2F2;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: 'Poppins', sans-serif;
+        }
+
+    .principal-card .button{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        }.principal-card .button .paypal{
+            width: 120px;
+            height: 45px;
+            margin: auto;
+            border: 2px solid #F2F2F2;
+            border-radius: 10px;
+            }.principal-card .button .paypal form{
+                margin: auto;
+                width: 100%;
+                display: flex;
+            }.principal-card .button .paypal form input{
+                width: 120px;
+                height: 45px;
+                margin: auto;
+                background-color: transparent;
+                color: #F2F2F2;
+                font-size: 20px;
+                text-transform: uppercase;
+                font-family: 'Poppins', sans-serif;
+                border: none;
+                cursor: pointer;
+                }
+
+        .principal-card .button .nequi{
+            margin: auto;
+            width: 100%;
+            display: flex;
+            }.principal-card .button .nequi a{
+                margin: auto;
+                width: 120px;
+                height: 45px;
+                background-color: #F2F2F2;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                display: flex;
+                }.principal-card .button .nequi a p{
+                    margin: auto;
+                    color: #038C7F;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    font-family: 'Poppins', sans-serif;
+                    }
+
+
+
+/* ------------------------------------------------------- */
+.two-card{
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px 0px #00000021;
+    background-color: #F2F2F2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 25% 40% 20%;
+    }.two-card .plan{
+        width: 100%;
+        display: flex;
+        }.two-card .plan p{
+            margin: auto;
+            color: #0f0f0f;
+            font-size: 25px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-family: 'Poppins', sans-serif;
+        }
+
+    .two-card .price{
+        width: 100%;
+        display: flex;
+        }.two-card .price p{
+            margin: auto;
+            color: #0f0f0f;
+            font-size: 80px;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+        }
+
+    .two-card .description{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        }.two-card .description div{
+            margin: auto;
+            width: 70%;
+            height: 1px;
+            background-color: #00000036;
+        }.two-card .description p{
+            margin: auto;
+            color: #0f0f0f;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: 'Poppins', sans-serif;
+        }
+
+    .two-card .button{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        }.two-card .button .paypal{
+            width: 120px;
+            height: 45px;
+            margin: auto;
+            border: 2px solid #038C7F;
+            border-radius: 10px;
+            }.two-card .button .paypal form{
+                margin: auto;
+                width: 100%;
+                display: flex;
+            }.two-card .button .paypal form input{
+                width: 120px;
+                height: 45px;
+                margin: auto;
+                background-color: transparent;
+                color: #038C7F;
+                font-size: 20px;
+                text-transform: uppercase;
+                font-family: 'Poppins', sans-serif;
+                border: none;
+                cursor: pointer;
+                }
+
+        .two-card .button .nequi{
+            margin: auto;
+            width: 100%;
+            display: flex;
+            }.two-card .button .nequi a{
+                margin: auto;
+                width: 120px;
+                height: 45px;
+                background-color: #038C7F;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                display: flex;
+                }.two-card .button .nequi a p{
+                    margin: auto;
+                    color: #ffffff;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    font-family: 'Poppins', sans-serif;
+                    }
+
+
+
+/* ------------------------------------------------------- */
+#box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    display: none;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    }
+    .boxMin{
+        margin: auto;
+        width: 450px;
+        height: 600px;
+        background-color: #F2F2F2;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70% 10% 20%;
+        }
+        .boxMin .img{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            }.boxMin .img img{
+                margin: auto;
+                border-radius: 20px;
+                height: 80%;
+                }
+
+        .boxMin .p{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            }.boxMin .p p{
+                margin: auto;
+                color: #0f0f0f;
+                font-size: 30px;
+                font-weight: 500;
+                font-family: 'Poppins', sans-serif;
+                text-transform: uppercase;
+                }
+
+        .boxMin .a{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            }
+            .boxMin .a a{
+                margin: auto;
+                display: flex;
+                width: 200px;
+                height: 50px;
+                background-color: #038C7F;
+                border-radius: 10px;
+                cursor: pointer;
+                }.boxMin .a a p{
+                    margin: auto;
+                    color: #ffffff;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    font-family: 'Poppins', sans-serif;
+                    }
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+
+.one-card{
+    width: 300px;
+    height: 450px;
+    grid-template-rows: 10% 25% 45% 20%;
+    }
+    .one-card .plan p{
+            font-size: 23px;
+        }
+    .one-card .price p{
+            font-size: 70px;
+        }
+    .one-card .description p{
+            font-size: 20px;
+        }
+    .one-card .button .paypal{
+            width: 100px;
+            height: 40px;
+            }.one-card .button .paypal form input{
+                width: 100px;
+                height: 40px;
+                font-size: 17px;
+                }
+        .one-card .button .nequi a{
+                width: 100px;
+                height: 40px;
+                }.one-card .button .nequi a p{
+                    font-size: 18px;
+                    }
+
+.principal-card{
+    width: 350px;
+    height: 500px;
+    grid-template-rows: 10% 25% 45% 20%;
+    }
+    .principal-card .plan p{
+            font-size: 23px;
+        }
+    .principal-card .price p{
+            font-size: 70px;
+        }
+    .principal-card .description p{
+            font-size: 20px;
+        }
+    .principal-card .button .paypal{
+            width: 100px;
+            height: 40px;
+            }.principal-card .button .paypal form input{
+                width: 100px;
+                height: 40px;
+                font-size: 17px;
+                }
+        .principal-card .button .nequi a{
+                width: 100px;
+                height: 40px;
+                }.principal-card .button .nequi a p{
+                    font-size: 18px;
+                    }
+
+.two-card{
+    width: 300px;
+    height: 450px;
+    grid-template-rows: 10% 25% 45% 20%;
+    }
+    .two-card .plan p{
+            font-size: 23px;
+        }
+    .two-card .price p{
+            font-size: 70px;
+        }
+    .two-card .description p{
+            font-size: 20px;
+        }
+    .two-card .button .paypal{
+            width: 100px;
+            height: 40px;
+            }.two-card .button .paypal form input{
+                width: 100px;
+                height: 40px;
+                font-size: 17px;
+                }
+        .two-card .button .nequi a{
+                width: 100px;
+                height: 40px;
+                }.two-card .button .nequi a p{
+                    font-size: 18px;
+                    }
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    #main{
+    width: 100%;
+    height: 180vh;
+    background-color: #F2F2F2;
+    display: flex;
+    overflow: hidden;
+}
+.title{
+    top: 2%;
+    }.title h1{
+        font-size: 30px;
+    }
+.poweredBy{
+    top: 172vh;
+    right: 2%;
+    }.poweredBy p{
+        margin: auto;
+        color: #F2F2F2;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+        }
+.fondo{
+    height: 180vh;
+    }
+.components{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+
+/* ------------------------------------------------------- */
+.one-card{
+    width: 300px;
+    height: 400px;
+    grid-template-rows: 10% 25% 45% 20%;
+    }
+.principal-card{
+    width: 320px;
+    height: 400px;
+    grid-template-rows: 10% 25% 45% 20%;
+    }
+.two-card{
+    width: 300px;
+    height: 400px;
+    grid-template-rows: 10% 25% 45% 20%;
+    }
+
+
+/* ------------------------------------------------------- */
+#box{
+    height: 180vh;
+    }
+    .boxMin{
+        width: 350px;
+        height: 500px;
+        }
+        .boxMin .img img{
+            width: 80%;
+        }
+        .boxMin .p p{
+            font-size: 22px;
+        }
+        .boxMin .a a{
+            width: 170px;
+            height: 45px;
+            }.boxMin .a a p{
+                font-size: 18px;
+            }
+}
