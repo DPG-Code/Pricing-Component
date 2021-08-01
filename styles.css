@@ -13,6 +13,7 @@ body{
 #main{
     width: 100%;
     height: 100vh;
+    min-height: 800px;
     background-color: #F2F2F2;
     display: flex;
     overflow: hidden;
@@ -20,7 +21,7 @@ body{
 
 .title{
     position: absolute;
-    top: 5%;
+    top: 20px;
     width: 100%;
     height: 100px;
     display: flex;
@@ -35,8 +36,8 @@ body{
 
 .poweredBy{
     position: absolute;
-    top: 94%;
-    right: 2%;
+    right: 20px;
+    bottom: 20px;
     width: 200px;
     height: 30px;
     display: flex;
@@ -54,6 +55,7 @@ body{
 .fondo{
     width: 100%;
     height: 100%;
+    min-height: 800px;
     position: absolute;
     z-index: 1;
     }.fondo img{
@@ -76,19 +78,19 @@ body{
 
 
 /* ------------------------------------------------------- */
-.one-card{
-    width: 350px;
-    height: 500px;
+.ends-card{
+    min-width: 350px;
+    min-height: 500px;
     border-radius: 15px;
     box-shadow: -10px 10px 15px 0px #00000021;
     background-color: #F2F2F2;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 15% 25% 40% 20%;
-    }.one-card .plan{
+    }.ends-card .plan{
         width: 100%;
         display: flex;
-        }.one-card .plan p{
+        }.ends-card .plan p{
             margin: auto;
             color: #0f0f0f;
             font-size: 25px;
@@ -97,10 +99,10 @@ body{
             font-family: 'Poppins', sans-serif;
         }
 
-    .one-card .price{
+    .ends-card .price{
         width: 100%;
         display: flex;
-        }.one-card .price p{
+        }.ends-card .price p{
             margin: auto;
             color: #0f0f0f;
             font-size: 80px;
@@ -108,18 +110,18 @@ body{
             font-family: 'Poppins', sans-serif;
         }
 
-    .one-card .description{
+    .ends-card .description{
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        }.one-card .description div{
+        }.ends-card .description div{
             margin: auto;
             width: 70%;
             height: 1px;
             background-color: #00000036;
-        }.one-card .description p{
+        }.ends-card .description p{
             margin: auto;
             color: #0f0f0f;
             font-size: 20px;
@@ -127,22 +129,22 @@ body{
             font-family: 'Poppins', sans-serif;
         }
 
-    .one-card .button{
+    .ends-card .button{
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
-        }.one-card .button .paypal{
+        }.ends-card .button .paypal{
             width: 120px;
             height: 45px;
             margin: auto;
             border: 2px solid #038C7F;
             border-radius: 10px;
-            }.one-card .button .paypal form{
+            }.ends-card .button .paypal form{
                 margin: auto;
                 width: 100%;
                 display: flex;
-            }.one-card .button .paypal form input{
+            }.ends-card .button .paypal form input{
                 width: 120px;
                 height: 45px;
                 margin: auto;
@@ -155,11 +157,11 @@ body{
                 cursor: pointer;
                 }
 
-        .one-card .button .nequi{
+        .ends-card .button .nequi{
             margin: auto;
             width: 100%;
             display: flex;
-            }.one-card .button .nequi a{
+            }.ends-card .button .nequi a{
                 margin: auto;
                 width: 120px;
                 height: 45px;
@@ -168,7 +170,7 @@ body{
                 border-radius: 10px;
                 cursor: pointer;
                 display: flex;
-                }.one-card .button .nequi a p{
+                }.ends-card .button .nequi a p{
                     margin: auto;
                     color: #ffffff;
                     font-size: 20px;
@@ -180,8 +182,8 @@ body{
 
 /* ------------------------------------------------------- */
 .principal-card{
-    width: 400px;
-    height: 550px;
+    min-width: 400px;
+    min-height: 550px;
     border-radius: 15px;
     box-shadow: 0px 0px 15px 5px #00000021;
     background-color: #038C7F;
@@ -282,109 +284,6 @@ body{
 
 
 /* ------------------------------------------------------- */
-.two-card{
-    width: 350px;
-    height: 500px;
-    border-radius: 15px;
-    box-shadow: 10px 10px 15px 0px #00000021;
-    background-color: #F2F2F2;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 15% 25% 40% 20%;
-    }.two-card .plan{
-        width: 100%;
-        display: flex;
-        }.two-card .plan p{
-            margin: auto;
-            color: #0f0f0f;
-            font-size: 25px;
-            font-weight: 600;
-            text-transform: uppercase;
-            font-family: 'Poppins', sans-serif;
-        }
-
-    .two-card .price{
-        width: 100%;
-        display: flex;
-        }.two-card .price p{
-            margin: auto;
-            color: #0f0f0f;
-            font-size: 80px;
-            font-weight: 700;
-            font-family: 'Poppins', sans-serif;
-        }
-
-    .two-card .description{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        }.two-card .description div{
-            margin: auto;
-            width: 70%;
-            height: 1px;
-            background-color: #00000036;
-        }.two-card .description p{
-            margin: auto;
-            color: #0f0f0f;
-            font-size: 20px;
-            font-weight: 400;
-            font-family: 'Poppins', sans-serif;
-        }
-
-    .two-card .button{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-        }.two-card .button .paypal{
-            width: 120px;
-            height: 45px;
-            margin: auto;
-            border: 2px solid #038C7F;
-            border-radius: 10px;
-            }.two-card .button .paypal form{
-                margin: auto;
-                width: 100%;
-                display: flex;
-            }.two-card .button .paypal form input{
-                width: 120px;
-                height: 45px;
-                margin: auto;
-                background-color: transparent;
-                color: #038C7F;
-                font-size: 20px;
-                text-transform: uppercase;
-                font-family: 'Poppins', sans-serif;
-                border: none;
-                cursor: pointer;
-                }
-
-        .two-card .button .nequi{
-            margin: auto;
-            width: 100%;
-            display: flex;
-            }.two-card .button .nequi a{
-                margin: auto;
-                width: 120px;
-                height: 45px;
-                background-color: #038C7F;
-                border: none;
-                border-radius: 10px;
-                cursor: pointer;
-                display: flex;
-                }.two-card .button .nequi a p{
-                    margin: auto;
-                    color: #ffffff;
-                    font-size: 20px;
-                    text-transform: uppercase;
-                    font-family: 'Poppins', sans-serif;
-                    }
-
-
-
-/* ------------------------------------------------------- */
 #box{
     width: 100%;
     height: 100%;
@@ -455,39 +354,39 @@ body{
 
 @media only screen and (max-width: 1200px) {
 
-.one-card{
-    width: 300px;
-    height: 450px;
-    grid-template-rows: 10% 25% 45% 20%;
+.ends-card{
+    min-width: 300px;
+    min-height: 400px;
+    grid-template-rows: 15% 25% 40% 20%;
     }
-    .one-card .plan p{
-            font-size: 23px;
-        }
-    .one-card .price p{
-            font-size: 70px;
-        }
-    .one-card .description p{
+    .ends-card .plan p{
             font-size: 20px;
         }
-    .one-card .button .paypal{
+    .ends-card .price p{
+            font-size: 60px;
+        }
+    .ends-card .description p{
+            font-size: 18px;
+        }
+    .ends-card .button .paypal{
             width: 100px;
             height: 40px;
-            }.one-card .button .paypal form input{
+            }.ends-card .button .paypal form input{
                 width: 100px;
                 height: 40px;
                 font-size: 17px;
                 }
-        .one-card .button .nequi a{
+        .ends-card .button .nequi a{
                 width: 100px;
                 height: 40px;
-                }.one-card .button .nequi a p{
+                }.ends-card .button .nequi a p{
                     font-size: 18px;
                     }
 
 .principal-card{
-    width: 350px;
-    height: 500px;
-    grid-template-rows: 10% 25% 45% 20%;
+    min-width: 330px;
+    min-height: 475px;
+    grid-template-rows: 15% 25% 40% 20%;
     }
     .principal-card .plan p{
             font-size: 23px;
@@ -512,55 +411,24 @@ body{
                 }.principal-card .button .nequi a p{
                     font-size: 18px;
                     }
-
-.two-card{
-    width: 300px;
-    height: 450px;
-    grid-template-rows: 10% 25% 45% 20%;
-    }
-    .two-card .plan p{
-            font-size: 23px;
-        }
-    .two-card .price p{
-            font-size: 70px;
-        }
-    .two-card .description p{
-            font-size: 20px;
-        }
-    .two-card .button .paypal{
-            width: 100px;
-            height: 40px;
-            }.two-card .button .paypal form input{
-                width: 100px;
-                height: 40px;
-                font-size: 17px;
-                }
-        .two-card .button .nequi a{
-                width: 100px;
-                height: 40px;
-                }.two-card .button .nequi a p{
-                    font-size: 18px;
-                    }
 }
 
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
     #main{
     width: 100%;
-    height: 180vh;
+    min-height: 1500px;
     background-color: #F2F2F2;
     display: flex;
     overflow: hidden;
 }
-.title{
-    top: 2%;
-    }.title h1{
-        font-size: 30px;
+.title h1{
+    font-size: 7vw;
     }
 .poweredBy{
-    top: 172vh;
-    right: 2%;
+    top: 1450px;
+    right: 20px;
     }.poweredBy p{
         margin: auto;
         color: #F2F2F2;
@@ -569,7 +437,7 @@ body{
         font-family: 'Poppins', sans-serif;
         }
 .fondo{
-    height: 180vh;
+    min-height: 1500px;
     }
 .components{
     width: 100%;
@@ -583,26 +451,18 @@ body{
 
 
 /* ------------------------------------------------------- */
-.one-card{
-    width: 300px;
-    height: 400px;
-    grid-template-rows: 10% 25% 45% 20%;
+.ends-card{
+    min-width: 300px;
+    min-height: 380px;
     }
 .principal-card{
-    width: 320px;
-    height: 400px;
-    grid-template-rows: 10% 25% 45% 20%;
+    min-width: 320px;
+    min-height: 420px;
     }
-.two-card{
-    width: 300px;
-    height: 400px;
-    grid-template-rows: 10% 25% 45% 20%;
-    }
-
 
 /* ------------------------------------------------------- */
 #box{
-    height: 180vh;
+    min-height: 1500px;
     }
     .boxMin{
         width: 350px;
